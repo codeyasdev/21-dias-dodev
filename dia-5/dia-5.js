@@ -1,14 +1,23 @@
 //variavel
-let idade = Number(prompt("insira a sua idade: "))
+let num1 = parseInt(prompt("Digite o primeiro número"))
+let num2 = parseInt(prompt("Digite o segundo número"))
+let opcao = parseInt(prompt("Escolha a operação que deseja realizar:" + "\n1 = +; \n2 = -; \n3 = *; \n4 = /"))
 
-switch (idade){
-    case 20:
-        console.log("Você tem 20 anos")
+
+//criando switchcase
+
+switch(opcao){
+    case 1:
+        console.log(num1 + "+" + num2 + "=" + (num1+num2))
         break;
-    case 25:
-        console.log("Você tem 25 anos")
+    case 2: 
+        console.log(num1 + "-" + num2 + "=" + (num1 - num2))
+        break;
+    case 3: 
+        console.log(num1 + " * " + num2 + "=" + (num1 * num2))
         break;
     default:
-        console.log("DEFAULT")
+        console.log(num1 + "/" + num2 + "=" + (num1 / num2))
         break;
+
 }
